@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BFPay"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "BF支付."
 
   s.description  = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.author             = { "陈玉琪" => "yq.chen@renrunkeji.com" }
 
 
-  s.source       = { :git => "https://github.com/cyqluowang/BFPay.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/cyqluowang/BFPay.git", :tag => s.version  }
 
   s.source_files  = "Core", "Core/**/*.{h,m}"
   s.vendored_libraries = 'Core/*.a'
