@@ -21,5 +21,5 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Core", "Core/**/*.{h,m}"
   s.vendored_libraries = 'Core/*.a'
-
+  s.resources = "Core/BFResource.bundle"
 end
