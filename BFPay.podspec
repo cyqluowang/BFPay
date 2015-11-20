@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BFPay"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "BF支付."
 
   s.description  = <<-DESC
