@@ -3,11 +3,11 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BFPay"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "BF支付."
-
+  s.requires_arc = true
   s.description  = <<-DESC
-  贝付支付SDK
+  贝付支付真机SDK，模拟器的话跑不了
                    DESC
 
   s.homepage     = "https://github.com/cyqluowang/BFPay"
@@ -22,4 +22,6 @@ Pod::Spec.new do |s|
   s.source_files  = "Core", "Core/**/*.{h,m}"
   s.vendored_libraries = 'Core/*.a'
   s.resources = "Core/BFResource.bundle"
+  s.frameworks = 'SystemConfiguration', 'Security', 'CFNetwork'
+  s.xcconfig = { 'OTHER_LDFLAGS' => '--all_load' }
 end
