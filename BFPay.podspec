@@ -20,5 +20,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/cyqluowang/BFPay.git", :tag => "0.0.1" }
 
   s.source_files  = "Core", "Core/**/*.{h,m}"
+  s.vendored_libraries = 'Core/*.a'
 
 end
