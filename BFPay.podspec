@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BFPay"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "BF支付."
   s.requires_arc = true
   s.description  = <<-DESC
@@ -23,5 +23,4 @@ Pod::Spec.new do |s|
   s.vendored_libraries = 'Core/*.a'
   s.resources = "Core/BFResource.bundle"
   s.frameworks = 'SystemConfiguration', 'Security', 'CFNetwork'
-  s.xcconfig = { 'OTHER_LDFLAGS' => '--all_load' }
 end
