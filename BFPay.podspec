@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BFPay"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "BF支付."
   s.requires_arc = true
   s.description  = <<-DESC
