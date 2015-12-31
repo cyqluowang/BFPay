@@ -17,12 +17,19 @@
 /**
  支付成功
  */
+@required
 -(void)BFPayDidSucceeded:(NSDictionary *)message;
 /**
  支付失败
  */
+@required
 -(void)BFPayDidFailed:(NSDictionary *)message;
 
+/**
+ 支付之前回调
+ */
+@optional
+-(void)BFPayBeforeSucceed:(NSDictionary *)message;
 
 @end
 
@@ -57,7 +64,8 @@
 @property (nonatomic, strong) NSString *IDNumber;
 @property (nonatomic, strong) NSString *bankCardNumber;
 
-
+//可否解绑
+@property (nonatomic, assign) BOOL canUnbind;
 
 
 //颜色接口  （1）SDK内部所有按钮的背景颜色（2）导航栏填充色（3）标题字体颜色；不设置会默认。

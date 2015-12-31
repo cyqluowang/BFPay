@@ -39,9 +39,14 @@ typedef void(^CompleteBlock_T)(NSDictionary *message,NSString *result);
 //初始化提现接口
 -(instancetype)initWithPartnerID:(NSString *)partnerID andKey:(NSString *)partnerKey;
 
+//
 -(void)withdrawCashWithCompletion:(CompleteBlock_T)block;
 
-
+//查询绑卡信息接口
 -(void)sendGetBindBankCardInfoRequestWithCompletion:(CompleteBlock_T)block;
+
+
+//解绑银行卡接口
+-(void)unbindBankCardAccordingToCustomID:(NSString *)customID completion:(CompleteBlock_T)block;
 
 @end
